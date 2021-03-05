@@ -2366,18 +2366,6 @@ design rules under a new name.</description>
 <contactref element="U3" pad="2" route="any" routetag="G$1.VOUT"/>
 <wire x1="19.304" y1="8.128" x2="20.32" y2="9.144" width="0.8128" layer="1"/>
 <wire x1="20.32" y1="9.144" x2="20.32" y2="9.863" width="0.8128" layer="1"/>
-<polygon width="0.1524" layer="1">
-<vertex x="18.034" y="12.192"/>
-<vertex x="14.986" y="15.24"/>
-<vertex x="14.986" y="17.78"/>
-<vertex x="15.748" y="18.542"/>
-<vertex x="24.892" y="18.542"/>
-<vertex x="25.654" y="17.78"/>
-<vertex x="25.654" y="14.732"/>
-<vertex x="23.114" y="12.192"/>
-</polygon>
-<wire x1="20.32" y1="12.7" x2="20.066" y2="12.954" width="0.8128" layer="1"/>
-<wire x1="20.32" y1="12.7" x2="20.32" y2="9.863" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="F" pad="2"/>
@@ -2804,6 +2792,19 @@ design rules under a new name.</description>
 <contactref element="U2" pad="16"/>
 <wire x1="19.07" y1="28.008" x2="19.07" y2="26.23" width="0.2286" layer="1"/>
 <wire x1="19.07" y1="26.23" x2="19.558" y2="25.742" width="0.2286" layer="1"/>
+</signal>
+<signal name="HT">
+<contactref element="U3" pad="4"/>
+<polygon width="0.1524" layer="1">
+<vertex x="18.034" y="11.938"/>
+<vertex x="22.606" y="11.938"/>
+<vertex x="26.162" y="15.494"/>
+<vertex x="26.162" y="17.526"/>
+<vertex x="25.4" y="18.288"/>
+<vertex x="15.24" y="18.288"/>
+<vertex x="14.478" y="17.526"/>
+<vertex x="14.478" y="15.494"/>
+</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>
