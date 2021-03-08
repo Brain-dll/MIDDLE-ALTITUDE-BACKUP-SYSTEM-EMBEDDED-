@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -199,6 +199,10 @@
 <hole x="7.366" y="4.058" drill="3.5"/>
 <hole x="7.3798" y="51.302" drill="3.5"/>
 <hole x="31.242" y="51.302" drill="3.5"/>
+<text x="33.528" y="10.922" size="2.286" layer="21" rot="R90">EPHEMERIS</text>
+<text x="4.826" y="25.4" size="2.286" layer="21" rot="R270">BRAIN.DLL</text>
+<text x="7.366" y="25.4" size="2.286" layer="22" rot="MR270">BRAIN.DLL</text>
+<text x="31.496" y="10.922" size="2.286" layer="22" rot="MR90">EPHEMERIS</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
