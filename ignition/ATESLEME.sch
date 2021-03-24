@@ -64,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="11" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
@@ -4356,67 +4357,6 @@ Diode with low voltage drop</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="ABMM2-8.000MHZ-E2-T">
-<packages>
-<package name="ABMM2-8.000MHZ-E2-T">
-<smd name="OUT" x="-2.159" y="-1.27" dx="1.8034" dy="1.397" layer="1"/>
-<smd name="GND@0" x="-2.159" y="1.1176" dx="1.8034" dy="1.397" layer="1"/>
-<smd name="GND@1" x="2.2352" y="-1.27" dx="1.8034" dy="1.397" layer="1"/>
-<smd name="ıN" x="2.2352" y="1.1176" dx="1.8034" dy="1.397" layer="1"/>
-<wire x1="-2.8702" y1="-1.7526" x2="2.9718" y2="-1.7526" width="0.127" layer="21"/>
-<wire x1="2.9718" y1="-1.7526" x2="2.9718" y2="1.6256" width="0.127" layer="21"/>
-<wire x1="2.9718" y1="1.6256" x2="-2.8702" y2="1.6256" width="0.127" layer="21"/>
-<wire x1="-2.8702" y1="1.6256" x2="-2.8702" y2="-1.7526" width="0.127" layer="21"/>
-<wire x1="-2.8194" y1="1.6256" x2="2.9718" y2="1.6256" width="0.0508" layer="51"/>
-<wire x1="2.9718" y1="1.6256" x2="2.9718" y2="-1.7526" width="0.0508" layer="51"/>
-<wire x1="2.9718" y1="-1.7526" x2="-2.8702" y2="-1.7526" width="0.0508" layer="51"/>
-<wire x1="-2.8702" y1="-1.7526" x2="-2.8702" y2="1.6256" width="0.0508" layer="51"/>
-<wire x1="-2.8702" y1="1.6256" x2="-2.8194" y2="1.6256" width="0.127" layer="51"/>
-<rectangle x1="-2.8956" y1="0.5334" x2="-1.7018" y2="1.651" layer="51"/>
-<rectangle x1="-2.8956" y1="-1.7526" x2="-1.7018" y2="-0.635" layer="51"/>
-<rectangle x1="1.778" y1="-1.778" x2="2.9718" y2="-0.6604" layer="51"/>
-<rectangle x1="1.778" y1="0.5334" x2="2.9718" y2="1.651" layer="51"/>
-<text x="-2.9464" y="1.905" size="0.762" layer="25">&gt;NAME</text>
-<text x="-2.9464" y="-3.1242" size="0.762" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="ABMM2-8.000MHZ-E2-T">
-<wire x1="0.0254" y1="2.5908" x2="0.0254" y2="1.2954" width="0.1524" layer="94"/>
-<wire x1="0.0254" y1="1.2954" x2="0.0254" y2="0" width="0.1524" layer="94"/>
-<wire x1="0.0254" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.5146" y1="1.2954" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="0.0254" y2="1.2954" width="0.1524" layer="94"/>
-<wire x1="0.0254" y1="1.2954" x2="1.27" y2="0.0508" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0.0508" x2="2.5146" y2="1.2954" width="0.1524" layer="94"/>
-<wire x1="2.5146" y1="1.2954" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
-<text x="0" y="2.54" size="0.508" layer="95">&gt;NAME</text>
-<text x="0.0254" y="-0.6604" size="0.508" layer="96">&gt;VALUE</text>
-<pin name="IN" x="5.08" y="1.27" visible="pad" length="short" rot="R180"/>
-<pin name="OUT" x="-2.54" y="1.27" visible="pad" length="short"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ABMM2-8.000MHZ-E2-T" prefix="U" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="ABMM2-8.000MHZ-E2-T" x="-1.27" y="-1.27"/>
-</gates>
-<devices>
-<device name="" package="ABMM2-8.000MHZ-E2-T">
-<connects>
-<connect gate="G$1" pin="IN" pad="ıN"/>
-<connect gate="G$1" pin="OUT" pad="OUT"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
 <description>&lt;h3&gt;SparkFun Capacitors&lt;/h3&gt;
 This library contains capacitors. 
@@ -6741,6 +6681,79 @@ BUZZER</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="ABM3B-26.000MHZ-10-1-U-T">
+<packages>
+<package name="OSCCC500X320X110-4N">
+<wire x1="-2.475" y1="1.65" x2="-1.05" y2="1.65" width="0.2032" layer="51"/>
+<wire x1="-1.05" y1="1.65" x2="1.05" y2="1.65" width="0.2032" layer="21"/>
+<wire x1="1.05" y1="1.65" x2="2.475" y2="1.65" width="0.2032" layer="51"/>
+<wire x1="2.9" y1="1.225" x2="2.9" y2="0.3" width="0.2032" layer="51"/>
+<wire x1="2.9" y1="-0.3" x2="2.9" y2="-1.225" width="0.2032" layer="51"/>
+<wire x1="2.475" y1="-1.65" x2="1.05" y2="-1.65" width="0.2032" layer="51"/>
+<wire x1="1.05" y1="-1.65" x2="-1.05" y2="-1.65" width="0.2032" layer="21"/>
+<wire x1="-1.05" y1="-1.65" x2="-2.475" y2="-1.65" width="0.2032" layer="51"/>
+<wire x1="-2.9" y1="-1.225" x2="-2.9" y2="-0.3" width="0.2032" layer="51"/>
+<wire x1="-2.9" y1="0.3" x2="-2.9" y2="1.225" width="0.2032" layer="51"/>
+<wire x1="-2.9" y1="1.225" x2="-2.475" y2="1.65" width="0.2032" layer="51" curve="89.5167"/>
+<wire x1="2.475" y1="1.65" x2="2.9" y2="1.225" width="0.2032" layer="51" curve="89.5167"/>
+<wire x1="2.9" y1="-1.225" x2="2.475" y2="-1.65" width="0.2032" layer="51" curve="89.5167"/>
+<wire x1="-2.475" y1="-1.65" x2="-2.9" y2="-1.225" width="0.2032" layer="51" curve="89.5167"/>
+<text x="-2.54441875" y="2.54441875" size="1.272209375" layer="25">&gt;NAME</text>
+<text x="-2.544809375" y="-3.81721875" size="1.272409375" layer="27">&gt;VALUE</text>
+<smd name="1" x="-2.2" y="-1.2" dx="1.9" dy="1.4" layer="1"/>
+<smd name="2" x="2.2" y="-1.2" dx="1.9" dy="1.4" layer="1"/>
+<smd name="3" x="2.2" y="1.2" dx="1.9" dy="1.4" layer="1"/>
+<smd name="4" x="-2.2" y="1.2" dx="1.9" dy="1.4" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ABM3B-26.000MHZ-10-1-U-T">
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.905" x2="1.778" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-2.54" x2="1.778" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-2.54" x2="-1.778" y2="-1.905" width="0.1524" layer="94"/>
+<text x="2.545409375" y="1.01816875" size="1.781790625" layer="95">&gt;NAME</text>
+<text x="2.5467" y="-2.5467" size="1.782690625" layer="96">&gt;VALUE</text>
+<pin name="3" x="6.096" y="0" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-7.62" y="0" length="middle" direction="pas" swaplevel="1"/>
+<pin name="GND" x="0" y="-7.62" length="middle" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ABM3B-26.000MHZ-10-1-U-T" prefix="Y">
+<description>Ceramic SMD Crystal &lt;a href="https://pricing.snapeda.com/parts/ABM3B-26.000MHZ-10-1-U-T/Abracon/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ABM3B-26.000MHZ-10-1-U-T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSCCC500X320X110-4N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Good"/>
+<attribute name="DESCRIPTION" value=" 26MHz ±10ppm Crystal 10pF 50 Ohms 4-SMD, No Lead "/>
+<attribute name="MF" value="Abracon"/>
+<attribute name="MP" value="ABM3B-26.000MHZ-10-1-U-T"/>
+<attribute name="PACKAGE" value="SMD-4 Abracon LLC"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/ABM3B-26.000MHZ-10-1-U-T/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6756,7 +6769,6 @@ BUZZER</description>
 <part name="POWER" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="3.5MM-NO_SILK" package3d_urn="urn:adsk.eagle:package:38055/1"/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device="" value="VIN"/>
 <part name="SW" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="3.5MM-NO_SILK" package3d_urn="urn:adsk.eagle:package:38055/1"/>
-<part name="OSC" library="ABMM2-8.000MHZ-E2-T" deviceset="ABMM2-8.000MHZ-E2-T" device=""/>
 <part name="RC4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF-POLAR" device="-EIA3528-20V-10%(TANT)" package3d_urn="urn:adsk.eagle:package:37411/1" value="22uF"/>
 <part name="RC3" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37414/1" value="100nF"/>
 <part name="RC1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF-POLAR" device="-EIA3528-20V-10%(TANT)" package3d_urn="urn:adsk.eagle:package:37411/1" value="22uF"/>
@@ -6844,6 +6856,7 @@ BUZZER</description>
 <part name="U$2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDDA" device=""/>
 <part name="LS1" library="SparkFun-Electromechanical" library_urn="urn:adsk.eagle:library:516" deviceset="BUZZER" device="-PTH" package3d_urn="urn:adsk.eagle:package:38558/1"/>
 <part name="U3" library="AMS1117-3.3" library_urn="urn:adsk.eagle:library:27162810" deviceset="AMS1117-3.3" device="" package3d_urn="urn:adsk.eagle:package:27162813/2"/>
+<part name="Y2" library="ABM3B-26.000MHZ-10-1-U-T" deviceset="ABM3B-26.000MHZ-10-1-U-T" device="" value="ABM2B-8.000MHZ-10-1-U-T"/>
 </parts>
 <sheets>
 <sheet>
@@ -6899,10 +6912,6 @@ BUZZER</description>
 <instance part="SW" gate="G$1" x="523.24" y="55.88" smashed="yes">
 <attribute name="VALUE" x="520.7" y="51.054" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="520.7" y="61.468" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="OSC" gate="G$1" x="469.9" y="107.95" smashed="yes" rot="R180">
-<attribute name="NAME" x="469.9" y="105.41" size="0.508" layer="95" rot="R180"/>
-<attribute name="VALUE" x="469.8746" y="108.6104" size="0.508" layer="96" rot="R180"/>
 </instance>
 <instance part="RC4" gate="G$1" x="462.28" y="165.1" smashed="yes">
 <attribute name="NAME" x="463.296" y="165.735" size="1.778" layer="95" font="vector"/>
@@ -6988,16 +6997,16 @@ BUZZER</description>
 <instance part="GND13" gate="1" x="449.58" y="12.7" smashed="yes">
 <attribute name="VALUE" x="449.58" y="12.446" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="OSCC1" gate="G$1" x="462.28" y="96.52" smashed="yes">
-<attribute name="NAME" x="463.804" y="99.441" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="463.804" y="94.361" size="1.778" layer="96" font="vector"/>
+<instance part="OSCC1" gate="G$1" x="457.2" y="96.52" smashed="yes">
+<attribute name="NAME" x="458.724" y="99.441" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="458.724" y="94.361" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="OSCC2" gate="G$1" x="474.98" y="96.52" smashed="yes">
-<attribute name="NAME" x="476.504" y="99.441" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="476.504" y="94.361" size="1.778" layer="96" font="vector"/>
+<instance part="OSCC2" gate="G$1" x="480.06" y="96.52" smashed="yes">
+<attribute name="NAME" x="481.584" y="99.441" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="481.584" y="94.361" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="GND14" gate="1" x="469.9" y="86.36" smashed="yes">
-<attribute name="VALUE" x="469.9" y="86.106" size="1.778" layer="96" align="top-center"/>
+<instance part="GND14" gate="1" x="462.28" y="86.36" smashed="yes">
+<attribute name="VALUE" x="462.28" y="86.106" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="LED4" gate="G$1" x="459.74" y="63.5" smashed="yes">
 <attribute name="NAME" x="455.93" y="64.9986" size="1.778" layer="95"/>
@@ -7204,6 +7213,9 @@ BUZZER</description>
 <attribute name="NAME" x="416.7974" y="173.491140625" size="1.4224" layer="95"/>
 <attribute name="VALUE" x="416.8048" y="160.774640625" size="1.4224" layer="96"/>
 </instance>
+<instance part="Y2" gate="G$1" x="469.9" y="106.68" smashed="yes">
+<attribute name="NAME" x="472.445409375" y="105.15816875" size="1.781790625" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7295,13 +7307,17 @@ BUZZER</description>
 </segment>
 <segment>
 <pinref part="OSCC2" gate="G$1" pin="2"/>
-<wire x1="474.98" y1="93.98" x2="474.98" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="480.06" y1="93.98" x2="480.06" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="474.98" y1="88.9" x2="469.9" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="480.06" y1="88.9" x2="469.9" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="469.9" y1="88.9" x2="462.28" y2="88.9" width="0.1524" layer="91"/>
-<junction x="469.9" y="88.9"/>
+<wire x1="462.28" y1="88.9" x2="457.2" y2="88.9" width="0.1524" layer="91"/>
+<junction x="462.28" y="88.9"/>
 <pinref part="OSCC1" gate="G$1" pin="2"/>
-<wire x1="462.28" y1="88.9" x2="462.28" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="457.2" y1="88.9" x2="457.2" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="Y2" gate="G$1" pin="GND"/>
+<wire x1="469.9" y1="99.06" x2="469.9" y2="88.9" width="0.1524" layer="91"/>
+<junction x="469.9" y="88.9"/>
 </segment>
 <segment>
 <pinref part="LED" gate="G$1" pin="C"/>
@@ -7632,13 +7648,13 @@ BUZZER</description>
 <label x="309.88" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="OSC" gate="G$1" pin="IN"/>
-<wire x1="464.82" y1="106.68" x2="462.28" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="462.28" y1="106.68" x2="462.28" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="457.2" y1="101.6" x2="457.2" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="OSCC1" gate="G$1" pin="1"/>
-<wire x1="462.28" y1="101.6" x2="462.28" y2="106.68" width="0.1524" layer="91"/>
-<junction x="462.28" y="106.68"/>
-<label x="462.28" y="114.3" size="1.27" layer="95" rot="R90" xref="yes"/>
+<label x="457.2" y="114.3" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="Y2" gate="G$1" pin="1"/>
+<wire x1="457.2" y1="106.68" x2="457.2" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="462.28" y1="106.68" x2="457.2" y2="106.68" width="0.1524" layer="91"/>
+<junction x="457.2" y="106.68"/>
 </segment>
 </net>
 <net name="OSC_OUT" class="0">
@@ -7648,13 +7664,13 @@ BUZZER</description>
 <label x="381" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="OSC" gate="G$1" pin="OUT"/>
-<wire x1="472.44" y1="106.68" x2="474.98" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="474.98" y1="106.68" x2="474.98" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="480.06" y1="101.6" x2="480.06" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="OSCC2" gate="G$1" pin="1"/>
-<wire x1="474.98" y1="101.6" x2="474.98" y2="106.68" width="0.1524" layer="91"/>
-<junction x="474.98" y="106.68"/>
-<label x="474.98" y="114.3" size="1.27" layer="95" rot="R90" xref="yes"/>
+<label x="480.06" y="114.3" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="Y2" gate="G$1" pin="3"/>
+<wire x1="480.06" y1="106.68" x2="480.06" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="475.996" y1="106.68" x2="480.06" y2="106.68" width="0.1524" layer="91"/>
+<junction x="480.06" y="106.68"/>
 </segment>
 </net>
 <net name="PC13" class="0">

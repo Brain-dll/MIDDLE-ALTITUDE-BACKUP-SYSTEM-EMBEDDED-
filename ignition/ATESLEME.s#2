@@ -7968,6 +7968,42 @@ BUZZER</description>
 <label x="408.94" y="165.1" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
+<net name="INT1" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="PB5"/>
+<wire x1="314.96" y1="22.86" x2="309.88" y2="22.86" width="0.1524" layer="91"/>
+<label x="309.88" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="LPS-1" gate="G$1" pin="INT1"/>
+<wire x1="353.06" y1="154.94" x2="358.14" y2="154.94" width="0.1524" layer="91"/>
+<label x="358.14" y="154.94" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="IN1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="INT1"/>
+<wire x1="335.28" y1="99.06" x2="340.36" y2="99.06" width="0.1524" layer="91"/>
+<label x="340.36" y="99.06" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="PB9"/>
+<wire x1="314.96" y1="12.7" x2="309.88" y2="12.7" width="0.1524" layer="91"/>
+<label x="309.88" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="IN2" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="INT2"/>
+<wire x1="335.28" y1="96.52" x2="340.36" y2="96.52" width="0.1524" layer="91"/>
+<label x="340.36" y="96.52" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="PB8"/>
+<wire x1="314.96" y1="15.24" x2="309.88" y2="15.24" width="0.1524" layer="91"/>
+<label x="309.88" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

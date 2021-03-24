@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mil" altunit="mil"/>
@@ -64,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="11" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
@@ -705,31 +706,6 @@ BUZZER</description>
 </packageinstances>
 </package3d>
 </packages3d>
-</library>
-<library name="ABMM2-8.000MHZ-E2-T">
-<packages>
-<package name="ABMM2-8.000MHZ-E2-T">
-<smd name="OUT" x="-2.159" y="-1.27" dx="1.8034" dy="1.397" layer="1"/>
-<smd name="GND@0" x="-2.159" y="1.1176" dx="1.8034" dy="1.397" layer="1"/>
-<smd name="GND@1" x="2.2352" y="-1.27" dx="1.8034" dy="1.397" layer="1"/>
-<smd name="ıN" x="2.2352" y="1.1176" dx="1.8034" dy="1.397" layer="1"/>
-<wire x1="-2.8702" y1="-1.7526" x2="2.9718" y2="-1.7526" width="0.127" layer="21"/>
-<wire x1="2.9718" y1="-1.7526" x2="2.9718" y2="1.6256" width="0.127" layer="21"/>
-<wire x1="2.9718" y1="1.6256" x2="-2.8702" y2="1.6256" width="0.127" layer="21"/>
-<wire x1="-2.8702" y1="1.6256" x2="-2.8702" y2="-1.7526" width="0.127" layer="21"/>
-<wire x1="-2.8194" y1="1.6256" x2="2.9718" y2="1.6256" width="0.0508" layer="51"/>
-<wire x1="2.9718" y1="1.6256" x2="2.9718" y2="-1.7526" width="0.0508" layer="51"/>
-<wire x1="2.9718" y1="-1.7526" x2="-2.8702" y2="-1.7526" width="0.0508" layer="51"/>
-<wire x1="-2.8702" y1="-1.7526" x2="-2.8702" y2="1.6256" width="0.0508" layer="51"/>
-<wire x1="-2.8702" y1="1.6256" x2="-2.8194" y2="1.6256" width="0.127" layer="51"/>
-<rectangle x1="-2.8956" y1="0.5334" x2="-1.7018" y2="1.651" layer="51"/>
-<rectangle x1="-2.8956" y1="-1.7526" x2="-1.7018" y2="-0.635" layer="51"/>
-<rectangle x1="1.778" y1="-1.778" x2="2.9718" y2="-0.6604" layer="51"/>
-<rectangle x1="1.778" y1="0.5334" x2="2.9718" y2="1.651" layer="51"/>
-<text x="-2.9464" y="1.905" size="0.762" layer="25">&gt;NAME</text>
-<text x="-2.9464" y="-3.1242" size="0.762" layer="27">&gt;VALUE</text>
-</package>
-</packages>
 </library>
 <library name="SparkFun-LED" urn="urn:adsk.eagle:library:529">
 <description>&lt;h3&gt;SparkFun LEDs&lt;/h3&gt;
@@ -1741,6 +1717,32 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package3d>
 </packages3d>
 </library>
+<library name="ABM3B-26.000MHZ-10-1-U-T">
+<packages>
+<package name="OSCCC500X320X110-4N">
+<wire x1="-2.475" y1="1.65" x2="-1.05" y2="1.65" width="0.2032" layer="51"/>
+<wire x1="-1.05" y1="1.65" x2="1.05" y2="1.65" width="0.2032" layer="21"/>
+<wire x1="1.05" y1="1.65" x2="2.475" y2="1.65" width="0.2032" layer="51"/>
+<wire x1="2.9" y1="1.225" x2="2.9" y2="0.3" width="0.2032" layer="51"/>
+<wire x1="2.9" y1="-0.3" x2="2.9" y2="-1.225" width="0.2032" layer="51"/>
+<wire x1="2.475" y1="-1.65" x2="1.05" y2="-1.65" width="0.2032" layer="51"/>
+<wire x1="1.05" y1="-1.65" x2="-1.05" y2="-1.65" width="0.2032" layer="21"/>
+<wire x1="-1.05" y1="-1.65" x2="-2.475" y2="-1.65" width="0.2032" layer="51"/>
+<wire x1="-2.9" y1="-1.225" x2="-2.9" y2="-0.3" width="0.2032" layer="51"/>
+<wire x1="-2.9" y1="0.3" x2="-2.9" y2="1.225" width="0.2032" layer="51"/>
+<wire x1="-2.9" y1="1.225" x2="-2.475" y2="1.65" width="0.2032" layer="51" curve="89.5167"/>
+<wire x1="2.475" y1="1.65" x2="2.9" y2="1.225" width="0.2032" layer="51" curve="89.5167"/>
+<wire x1="2.9" y1="-1.225" x2="2.475" y2="-1.65" width="0.2032" layer="51" curve="89.5167"/>
+<wire x1="-2.475" y1="-1.65" x2="-2.9" y2="-1.225" width="0.2032" layer="51" curve="89.5167"/>
+<text x="-2.54441875" y="2.54441875" size="1.272209375" layer="25">&gt;NAME</text>
+<text x="-2.544809375" y="-3.81721875" size="1.272409375" layer="27">&gt;VALUE</text>
+<smd name="1" x="-2.2" y="-1.2" dx="1.9" dy="1.4" layer="1"/>
+<smd name="2" x="2.2" y="-1.2" dx="1.9" dy="1.4" layer="1"/>
+<smd name="3" x="2.2" y="1.2" dx="1.9" dy="1.4" layer="1"/>
+<smd name="4" x="-2.2" y="1.2" dx="1.9" dy="1.4" layer="1"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2065,10 +2067,6 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="RES-08296" x="13.589" y="-0.4064" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-1.651" y="53.0606" size="0.635" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="OSC" library="ABMM2-8.000MHZ-E2-T" package="ABMM2-8.000MHZ-E2-T" value="" x="0.1778" y="38.9636" smashed="yes" rot="R90">
-<attribute name="NAME" x="-1.7272" y="36.0172" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="VALUE" x="3.302" y="36.0172" size="0.762" layer="27" rot="R90"/>
-</element>
 <element name="OSCC1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="25pF" x="3.4798" y="40.7416" smashed="yes" rot="R90">
 <attribute name="NAME" x="2.7178" y="40.4876" size="0.635" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-00810" x="45.3898" y="95.3516" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2239,6 +2237,17 @@ design rules under a new name.</description>
 <attribute name="PRICE" value="None" x="12.1158" y="19.4056" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="8.419240625" y="21.87065" size="0.635" layer="27" font="vector" ratio="15"/>
 </element>
+<element name="Y2" library="ABM3B-26.000MHZ-10-1-U-T" package="OSCCC500X320X110-4N" value="ABM2B-8.000MHZ-10-1-U-T" x="0.254" y="38.8366" smashed="yes" rot="R270">
+<attribute name="AVAILABILITY" value="Good" x="8.9916" y="46.8884" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DESCRIPTION" value=" 26MHz ±10ppm Crystal 10pF 50 Ohms 4-SMD, No Lead " x="8.9916" y="46.8884" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Abracon" x="8.9916" y="46.8884" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MP" value="ABM3B-26.000MHZ-10-1-U-T" x="8.9916" y="46.8884" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="2.79841875" y="41.38101875" size="1.272209375" layer="25" rot="R270"/>
+<attribute name="PACKAGE" value="SMD-4 Abracon LLC" x="8.9916" y="46.8884" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PRICE" value="None" x="8.9916" y="46.8884" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/ABM3B-26.000MHZ-10-1-U-T/?ref=eda" x="8.9916" y="46.8884" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-3.56321875" y="41.381409375" size="1.272409375" layer="27" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2310,6 +2319,8 @@ design rules under a new name.</description>
 <via x="14.478" y="40.6654" extent="1-16" drill="0.508"/>
 <via x="6.7818" y="50.4698" extent="1-16" drill="0.3048"/>
 <via x="4.2418" y="47.498" extent="1-16" drill="0.508"/>
+<contactref element="Y2" pad="4"/>
+<contactref element="Y2" pad="2"/>
 </signal>
 <signal name="VCC">
 <contactref element="POWER" pad="2"/>
@@ -2373,8 +2384,8 @@ design rules under a new name.</description>
 <wire x1="9.3658" y1="42.7056" x2="8.7811" y2="42.7056" width="0.3048" layer="1"/>
 <wire x1="8.7811" y1="42.7056" x2="6.951978125" y2="44.534721875" width="0.3048" layer="1"/>
 <wire x1="6.951978125" y1="44.534721875" x2="6.5659" y2="44.534721875" width="0.3048" layer="1"/>
-<wire x1="7.8658" y1="41.2056" x2="6.629315625" y2="41.2056" width="0.2286" layer="1"/>
-<wire x1="6.629315625" y1="41.2056" x2="5.7302375" y2="42.104678125" width="0.2286" layer="1"/>
+<wire x1="7.8658" y1="41.2056" x2="6.629315625" y2="41.2056" width="0.3048" layer="1"/>
+<wire x1="6.629315625" y1="41.2056" x2="5.7302375" y2="42.104678125" width="0.3048" layer="1"/>
 <wire x1="15.12061875" y1="50.20614375" x2="15.56904375" y2="50.20614375" width="0.3048" layer="1"/>
 <wire x1="15.56904375" y1="50.20614375" x2="15.6215" y2="50.2586" width="0.1524" layer="1"/>
 <wire x1="9.3406" y1="51.5825" x2="9.3406" y2="52.0905" width="0.254" layer="1"/>
@@ -2491,22 +2502,23 @@ design rules under a new name.</description>
 </signal>
 <signal name="OSC_ıN">
 <contactref element="U2" pad="5"/>
-<contactref element="OSC" pad="ıN"/>
 <contactref element="OSCC1" pad="1"/>
-<wire x1="-0.9398" y1="41.1988" x2="0.6214" y2="39.6376" width="0.2286" layer="1"/>
-<wire x1="3.2258" y1="39.6376" x2="0.6214" y2="39.6376" width="0.2286" layer="1"/>
-<wire x1="3.2258" y1="39.6376" x2="3.4798" y2="39.8916" width="0.2286" layer="1"/>
-<wire x1="7.8658" y1="39.2056" x2="4.1658" y2="39.2056" width="0.2286" layer="1"/>
-<wire x1="4.1658" y1="39.2056" x2="3.4798" y2="39.8916" width="0.2286" layer="1"/>
+<wire x1="7.8658" y1="39.2056" x2="4.1658" y2="39.2056" width="0.3048" layer="1"/>
+<wire x1="4.1658" y1="39.2056" x2="3.5755" y2="39.7959" width="0.3048" layer="1"/>
+<contactref element="Y2" pad="1"/>
+<wire x1="3.5755" y1="39.7959" x2="3.4798" y2="39.8916" width="0.2286" layer="1"/>
+<wire x1="-0.946" y1="41.0366" x2="0.619" y2="39.4716" width="0.3048" layer="1"/>
+<wire x1="3.2512" y1="39.4716" x2="3.5755" y2="39.7959" width="0.3048" layer="1"/>
+<wire x1="0.619" y1="39.4716" x2="3.2512" y2="39.4716" width="0.3048" layer="1"/>
 </signal>
 <signal name="OSC_OUT">
 <contactref element="U2" pad="6"/>
-<contactref element="OSC" pad="OUT"/>
 <contactref element="OSCC2" pad="1"/>
-<wire x1="1.4478" y1="36.8046" x2="2.4248" y2="37.7816" width="0.2286" layer="1"/>
-<wire x1="2.4248" y1="37.7816" x2="3.4798" y2="37.7816" width="0.2286" layer="1"/>
-<wire x1="7.8658" y1="38.7056" x2="4.4038" y2="38.7056" width="0.2286" layer="1"/>
-<wire x1="4.4038" y1="38.7056" x2="3.4798" y2="37.7816" width="0.2286" layer="1"/>
+<wire x1="7.8658" y1="38.7056" x2="4.4038" y2="38.7056" width="0.3048" layer="1"/>
+<wire x1="4.4038" y1="38.7056" x2="3.4798" y2="37.7816" width="0.3048" layer="1"/>
+<contactref element="Y2" pad="3"/>
+<wire x1="1.454" y1="36.6366" x2="2.599" y2="37.7816" width="0.3048" layer="1"/>
+<wire x1="2.599" y1="37.7816" x2="3.4798" y2="37.7816" width="0.3048" layer="1"/>
 </signal>
 <signal name="PC13">
 <contactref element="U2" pad="2"/>
