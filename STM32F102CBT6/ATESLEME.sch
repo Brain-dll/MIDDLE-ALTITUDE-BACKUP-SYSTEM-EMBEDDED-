@@ -5749,91 +5749,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="inductors" urn="urn:adsk.eagle:library:243">
-<description>&lt;b&gt;Inductors and Filters&lt;/b&gt;&lt;p&gt;
-Based on the previous library ind-a.lbr&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="0402" urn="urn:adsk.eagle:footprint:15049/1" library_version="4">
-<description>&lt;b&gt;EMIFIL (R) Chip Ferrite Bead for GHz Noise&lt;/b&gt;&lt;p&gt;
-Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
-<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
-<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
-<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="0402" urn="urn:adsk.eagle:package:15132/1" type="box" library_version="4">
-<description>EMIFIL (R) Chip Ferrite Bead for GHz Noise
-Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
-<packageinstances>
-<packageinstance name="0402"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="L" urn="urn:adsk.eagle:symbol:15039/1" library_version="4">
-<text x="-3.81" y="1.3716" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-2.921" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-2.54" y1="-0.889" x2="2.54" y2="0.889" layer="94"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BLM15H" urn="urn:adsk.eagle:component:15207/2" prefix="L" library_version="4">
-<description>&lt;b&gt;EMIFIL (R) Chip Ferrite Bead for GHz Noise&lt;/b&gt;&lt;p&gt;
-Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
-<gates>
-<gate name="G$1" symbol="L" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15132/1"/>
-</package3dinstances>
-<technologies>
-<technology name="B121SN1">
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-<technology name="B221SN1">
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-<technology name="D102SN1">
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-<technology name="D182SN1">
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-<technology name="D601SN1">
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-<technology name="G102SN1">
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-<technology name="G601SN1">
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Electromechanical" urn="urn:adsk.eagle:library:516">
 <description>&lt;h3&gt;SparkFun Electromechanical Parts&lt;/h3&gt;
 This library contains electromechanical devices, like motors, speakers,servos, and relays.
@@ -6752,6 +6667,107 @@ BUZZER</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="52101-101-REV-A_v16" urn="urn:adsk.eagle:library:21899384">
+<description>Generated from &lt;b&gt;Testing&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="RC-MASTER-SMD_L0805MP" urn="urn:adsk.eagle:footprint:15662213/1" library_version="1">
+<description>&lt;b&gt;INDUCTOR&lt;/b&gt; - 0805 MicroPitch&lt;p&gt;</description>
+<wire x1="-0.51" y1="0.535" x2="0.51" y2="0.535" width="0.1016" layer="51"/>
+<wire x1="-0.51" y1="-0.535" x2="0.51" y2="-0.535" width="0.1016" layer="51"/>
+<wire x1="0" y1="-0.508" x2="0" y2="0.508" width="0.2032" layer="21"/>
+<wire x1="-1.05" y1="0.65" x2="1.05" y2="0.65" width="0.0006" layer="57"/>
+<wire x1="1.05" y1="0.65" x2="1.05" y2="-0.65" width="0.0006" layer="57"/>
+<wire x1="1.05" y1="-0.65" x2="-1.05" y2="-0.65" width="0.0006" layer="57"/>
+<wire x1="-1.05" y1="-0.65" x2="-1.05" y2="0.65" width="0.0006" layer="57"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+<rectangle x1="0.4064" y1="-0.65" x2="1" y2="0.65" layer="51"/>
+<rectangle x1="-1" y1="-0.65" x2="-0.4168" y2="0.65" layer="51"/>
+<smd name="1" x="-1.016" y="0" dx="1.2" dy="1.3" layer="1"/>
+<smd name="2" x="1.016" y="0" dx="1.2" dy="1.3" layer="1"/>
+<text x="-1.5875" y="0.9525" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.5875" y="-1.27" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="RC-MASTER-SMD_L1206MP" urn="urn:adsk.eagle:footprint:15662214/1" library_version="1">
+<description>&lt;b&gt;INDUCTOR&lt;/b&gt; - 1206 MicroPitch&lt;p&gt;</description>
+<wire x1="1.0525" y1="-0.7128" x2="-1.0652" y2="-0.7128" width="0.1016" layer="51"/>
+<wire x1="1.0525" y1="0.7128" x2="-1.0652" y2="0.7128" width="0.1016" layer="51"/>
+<wire x1="-0.508" y1="0.635" x2="0.508" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-0.508" y1="-0.635" x2="0.508" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.65" y1="0.85" x2="1.65" y2="0.85" width="0.0006" layer="57"/>
+<wire x1="1.65" y1="0.85" x2="1.65" y2="-0.85" width="0.0006" layer="57"/>
+<wire x1="1.65" y1="-0.85" x2="-1.65" y2="-0.85" width="0.0006" layer="57"/>
+<wire x1="-1.65" y1="-0.85" x2="-1.65" y2="0.85" width="0.0006" layer="57"/>
+<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
+<rectangle x1="-1.6" y1="-0.8" x2="-0.9" y2="0.8" layer="51"/>
+<rectangle x1="0.9001" y1="-0.8" x2="1.6" y2="0.8" layer="51" rot="R180"/>
+<smd name="1" x="-1.524" y="0" dx="1.3" dy="1.6" layer="1"/>
+<smd name="2" x="1.524" y="0" dx="1.3" dy="1.6" layer="1"/>
+<text x="-2.2225" y="1.1113" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.2225" y="-1.4288" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="RC-MASTER-SMD_L0805MP" urn="urn:adsk.eagle:package:15662270/2" type="model" library_version="1">
+<description>&lt;b&gt;INDUCTOR&lt;/b&gt; - 0805 MicroPitch&lt;p&gt;</description>
+<packageinstances>
+<packageinstance name="RC-MASTER-SMD_L0805MP"/>
+</packageinstances>
+</package3d>
+<package3d name="RC-MASTER-SMD_L1206MP" urn="urn:adsk.eagle:package:15662271/2" type="model" library_version="1">
+<description>&lt;b&gt;INDUCTOR&lt;/b&gt; - 1206 MicroPitch&lt;p&gt;</description>
+<packageinstances>
+<packageinstance name="RC-MASTER-SMD_L1206MP"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="RC-MASTER-SMD_FB-" urn="urn:adsk.eagle:symbol:21899387/1" library_version="1">
+<wire x1="-1.27" y1="0.9525" x2="1.27" y2="0.9525" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="0.9525" x2="1.27" y2="-0.9525" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-0.9525" x2="-1.27" y2="-0.9525" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="-0.9525" x2="-1.27" y2="0.9525" width="0.4064" layer="94"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-1.27" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RC-MASTER-SMD_FB_" urn="urn:adsk.eagle:component:21899496/1" prefix="L" uservalue="yes" library_version="1">
+<description>&lt;b&gt;FERRITE BEAD&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="RC-MASTER-SMD_FB-" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="0805MP" package="RC-MASTER-SMD_L0805MP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15662270/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1206MP" package="RC-MASTER-SMD_L1206MP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15662271/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6816,11 +6832,11 @@ BUZZER</description>
 <part name="VBAT_U" library="SparkFun-Resistors" deviceset="2.0KOHM1/10W5%(0603)" device="" value="10k"/>
 <part name="VBAT_D" library="SparkFun-Resistors" deviceset="2.0KOHM1/10W5%(0603)" device="" value="3.3k"/>
 <part name="GND24" library="SparkFun" deviceset="GND" device=""/>
-<part name="G1" library="SparkFun-Resistors" deviceset="2.0KOHM1/10W5%(0603)" device="" value="20"/>
+<part name="G1" library="SparkFun-Resistors" deviceset="2.0KOHM1/10W5%(0603)" device="" value="22"/>
 <part name="U8" library="IRLML6344TRPBF" deviceset="IRLML6344TRPBF" device=""/>
 <part name="GND30" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="S" library="SparkFun-Resistors" deviceset="2.0KOHM1/10W5%(0603)" device="" value="3.3k"/>
-<part name="G2" library="SparkFun-Resistors" deviceset="2.0KOHM1/10W5%(0603)" device="" value="20"/>
+<part name="G2" library="SparkFun-Resistors" deviceset="2.0KOHM1/10W5%(0603)" device="" value="22"/>
 <part name="U9" library="IRLML6344TRPBF" deviceset="IRLML6344TRPBF" device=""/>
 <part name="GND31" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="S2" library="SparkFun-Resistors" deviceset="2.0KOHM1/10W5%(0603)" device="" value="3.3k"/>
@@ -6845,7 +6861,7 @@ BUZZER</description>
 <part name="SUPPLY25" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VIN" device="" value="VINR"/>
 <part name="ADXLC1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VIN" device="" value="VINR"/>
-<part name="L1" library="inductors" library_urn="urn:adsk.eagle:library:243" deviceset="BLM15H" device="" package3d_urn="urn:adsk.eagle:package:15132/1" technology="B221SN1"/>
+<part name="L1" library="52101-101-REV-A_v16" library_urn="urn:adsk.eagle:library:21899384" deviceset="RC-MASTER-SMD_FB_" device="0805MP" package3d_urn="urn:adsk.eagle:package:15662270/2"/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="U$1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDDA" device=""/>
 <part name="LS1" library="SparkFun-Electromechanical" library_urn="urn:adsk.eagle:library:516" deviceset="BUZZER" device="-PTH" package3d_urn="urn:adsk.eagle:package:38558/1"/>
@@ -7594,7 +7610,7 @@ BUZZER</description>
 <pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
 <wire x1="360.68" y1="124.46" x2="360.68" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="360.68" y1="121.92" x2="363.22" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="121.92" x2="365.76" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
@@ -7962,7 +7978,7 @@ BUZZER</description>
 <segment>
 <pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="VDDA2" gate="G$1" pin="1"/>
-<wire x1="373.38" y1="121.92" x2="378.46" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="121.92" x2="378.46" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="378.46" y1="121.92" x2="383.54" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="383.54" y1="121.92" x2="388.62" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="388.62" y1="121.92" x2="388.62" y2="119.38" width="0.1524" layer="91"/>
