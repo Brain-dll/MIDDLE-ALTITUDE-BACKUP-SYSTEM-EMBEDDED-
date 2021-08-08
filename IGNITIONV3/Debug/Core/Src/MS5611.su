@@ -1,0 +1,6 @@
+MS5611.c:38:6:MS5611_Init	32	static
+MS5611.c:78:7:MS5611_ReadTemperature	24	static
+MS5611.c:92:7:MS5611_ReadPressure	32	static
+MS5611.c:152:7:MS5611_ReadAltitude	24	static
+MS5611.c:162:7:MS5611_ReadMedian_Altitude	40	static
+MS5611.c:170:7:Array_sort_MS	32	static

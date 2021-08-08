@@ -1,0 +1,8 @@
+ADXL345.c:30:6:ADXL345_Init	32	static
+ADXL345.c:46:6:ADXL345_SetCalibration	24	static
+ADXL345.c:66:6:ADXL345_GetUnCompanseted_Accelerations	24	static
+ADXL345.c:75:7:ADXL345_GetXaxis	16	static
+ADXL345.c:80:7:ADXL345_GetYaxis	16	static
+ADXL345.c:85:7:ADXL345_GetZaxis	16	static
+ADXL345.c:90:7:ADXL345_Zaxiss_filter	40	static
+ADXL345.c:97:7:Array_sort_ADXL	32	static
