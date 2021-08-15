@@ -188,7 +188,7 @@ int main(void)
 					if (MS_S == 5) {
 						uint8_t M = 0;
 						for (uint8_t i = 0; i <= MS_S; i++) {
-							if (MS_V[i] > 15)  // TEST BURNOUT VALUE = 15 READ BURNOUT VALUE = 100
+							if (MS_V[i] > 15)  // TEST BURNOUT VALUE = 15 REAL BURNOUT VALUE = 100
 								M++;
 						}
 						if (M >= 3) {
@@ -227,7 +227,7 @@ int main(void)
 					if (MS_S == 5) {
 						uint8_t M = 0;
 						for (uint8_t i = 0; i <= MS_S; i++) {
-							if (MS_V[i] < 5)
+							if (MS_V[i] < 0)   // APOGEE velocity limit
 								M++;
 						}
 						if (M >= 3) {
