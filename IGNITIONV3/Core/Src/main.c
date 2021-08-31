@@ -32,7 +32,7 @@
 
 float ADXL_Z[6] = {0}, MS_V[6] = {0}, MS_A[6] = {0};
 float temp, press, MS[2];
-uint8_t ADXL = 0, ADXL_S = 0, MS5611 = 0, MS_S = 0, ACC_FAIL = 0, final = 0;
+uint8_t ADXL = 0, ADXL_S = 0, MS5611 = 0, MS_S = 0, ACC_FAIL = 0, final = 0, k = 0;
 uint32_t tim1 = 0, tim2 = 0, dif = 0, alt_l = 0;
 /* USER CODE END PTD */
 
@@ -109,6 +109,7 @@ int main(void)
   MX_TIM4_Init();
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
+  Scan_I2C();
   ADXL345_Init();
   MS5611_Init();
   //HAL_TIM_Base_Start(&htim3);
@@ -609,7 +610,13 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void Scan_I2C(void){
+	for(uint8_t i = 0; i < 255 ; i++){
+		if(HAL_I2C_IsDeviceReady(&hi2c1, i, 1, 10) == HAL_OK){
+			k++;
+		}
+	}
+}
 /* USER CODE END 4 */
 
 /**
