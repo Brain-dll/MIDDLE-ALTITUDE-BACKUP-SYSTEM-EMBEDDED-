@@ -28,7 +28,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-#define ACC_l 1.5  // kalkisi anlamak icin gerekli ivme eşigi (pozitif olmali)***
+#define ACC_l 2.5  // kalkisi anlamak icin gerekli ivme eşigi (pozitif olmali)***
 
 float ADXL_Z[6] = {0}, MS_V[6] = {0}, MS_A[6] = {0};
 float temp, press, MS[2];
